@@ -19,6 +19,8 @@ It will show the user:
 - Use the resulting ID token to retrieve an STS token
 - Use the STS token to call S3 and Athena
 
+**However**, the role will not be configured on Cognito. Instead, a Pre Token Generation Lambda Trigger will override the preferred role. 
+
 # How to configure?
 
 Refer to the `src/main/resources/application.yml` file, all required attributes are marked and self-explanatory.
